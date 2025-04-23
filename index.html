@@ -1,18 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exoria AI</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="hero">
-    <div class="glow-pulse"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exoria AI | Intelligence. Elevated.</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #000000, #002a1e);
+        color: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+        animation: fadeIn 2s ease-in;
+      }
+      h1 {
+        font-size: 3.5rem;
+        background: linear-gradient(90deg, #00ffae, #ffd700);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pulse 2s infinite;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1.25rem;
+        color: #ccc;
+      }
+      button {
+        margin-top: 2rem;
+        padding: 0.75rem 2rem;
+        background-color: #00ffae;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        color: #000;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #00c794;
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body>
     <h1>Exoria AI</h1>
-    <p>Smart. Private. Elevated.</p>
-  </div>
+    <p>Intelligence. Elevated.</p>
+    <button onclick="window.location.href='vault.html'">Launch Exoria</button>
 
-  <script src="script.js"></script>
-</body>
+    <!-- Stripe-friendly description (hidden from normal users) -->
+    <div style="opacity: 0; height: 1px; overflow: hidden;">
+      Exoria AI is an invite-only AI software platform that delivers digital trust structuring,
+      wealth automation, and compliance insights. No physical goods are sold.
+    </div>
+  </body>
 </html>
